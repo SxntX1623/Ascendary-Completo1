@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Interactivo</title>
+    <link rel="stylesheet" href="Calendario.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Ascensores Global</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <h1>Calendario Interactivo</h1>
+        <div class="view-controls">
+            <button onclick="changeYear(-1)">&#9664;</button>
+            <span id="currentYear">2024</span>
+            <button onclick="changeYear(1)">&#9654;</button>
+
+            <button onclick="changeMonth(-1)">&#9664;</button>
+            <span id="currentMonth">Enero</span>
+            <button onclick="changeMonth(1)">&#9654;</button>
+
+            <button onclick="changeDay(-1)">&#9664;</button>
+            <span id="currentDay">1</span>
+            <button onclick="changeDay(1)">&#9654;</button>
+        </div>
+        <div id="calendar"></div>
+        <div class="task-input">
+            <input type="text" id="task" placeholder="Agregar o Eliminar Tarea">
+            <input type="color" id="colorPicker">
+            <button onclick="addTask()">Agregar Tarea</button>
+            <button onclick="removeTask()">Eliminar Tarea</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Todos los derechos reservados - Ascensores Global Ltda.</p>
+    </footer>
+
+    <script src="Calendario.js"></script>
+</body>
+</html>

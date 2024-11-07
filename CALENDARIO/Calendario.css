@@ -1,0 +1,159 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para la barra de navegación */
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-style:  below solid;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Texto en blanco */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0); /* Texto en blanco */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Color azul para hover */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los controles de vista */
+.view-controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-controls button {
+    margin: 0 10px;
+    padding: 10px 20px; /* Aumentar el padding para mayor tamaño */
+    flex: 1; /* Hacer que los botones ocupen el mismo espacio */
+    min-width: 100px; /* Ancho mínimo para los botones */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Estilos para la barra de tareas */
+.task-input {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: calc(100% - 100px); /* Ajustar el ancho según el tamaño del botón */
+}
+
+input[type="color"] {
+    padding: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Botones */
+button {
+    padding: 10px 10px; /* Aumentar el padding para mayor tamaño */
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Hacer que los botones ocupen el mismo espacio */
+    min-width: 100px; /* Ancho mínimo para los botones */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas para los días de la semana */
+    gap: 0; /* Sin espacio entre las celdas */
+    width: 60%; /* Ocupa todo el ancho disponible */
+    height: 90vh; /* Ocupa toda la altura de la ventana */
+}
+
+.month {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.day {
+    padding: 25px; /* Sin padding para maximizar el espacio */
+    text-align: center;
+    border: 10px #f3efef; /* Opcional: borde para cada día */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+    height: 100%; /* Asegura que cada día ocupe toda la altura disponible */
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.day:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.task {
+    margin-top: 5px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 3px;
+}
