@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <div class="logo">Ascensores Global</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
+            <li><a href="#inicio-sesion">Inicio de Sesión</a></li>
+        </ul>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section id="inicio" class="welcome-section">
+        <div class="welcome-box">
+            <h1>Bienvenido a Nuestra Página</h1>
+            <p>Descubre todo sobre nosotros.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Sobre Nosotros -->
+    <section id="sobre-nosotros" class="section about-section">
+        <div class="about-box">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa líder en el diseño, fabricación, instalación y mantenimiento de ascensores, destacándonos por ofrecer productos de alta calidad, diseño moderno y tecnologías avanzadas. Contamos con un equipo altamente capacitado y comprometido con la mejora continua. Nos especializamos en soluciones personalizadas para todo tipo de edificaciones, garantizando seguridad, eficiencia y comodidad. Además, mantenemos una constante inversión en innovación tecnológica para optimizar el rendimiento y la experiencia del usuario. Nuestros servicios incluyen instalación, modernización y mantenimiento preventivo y correctivo, siempre con un enfoque en la satisfacción del cliente..</p>
+        </div>
+    </section>
+<h2>nuestros servicios</h2>
+    <!-- Sección de Tarjetas -->
+    <!-- Sección de Tarjetas -->
+<section class="cards-section">
+    <div class="card">
+        <span class="card-number">1</span>
+        <h3>Mantenimiento</h3>
+        <p>Limpieza total del equipo, corrección de errores y reparación de daños.</p>
+        <button class="card-button" onclick="mostrarFormulario('mantenimiento-form')">Saber más</button>
+
+        <!-- Formulario oculto -->
+        <div id="mantenimiento-form" class="form-container">
+            <h3>Formulario de Mantenimiento</h3>
+            <form action="enviar_correo.php" method="POST"></form>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                
+                <button type="submit">Enviar</button>
+                <button type="button" onclick="ocultarFormulario('mantenimiento-form')">Cerrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="card-number">2</span>
+        <h3>Fabricación</h3>
+        <p>Fabricamos equipos de alta calidad y última tecnología.</p>
+        <button class="card-button" onclick="mostrarFormulario('fabricacion-form')">Saber más</button>
+
+        <!-- Formulario oculto -->
+        <div id="fabricacion-form" class="form-container">
+            <h3>Formulario de Fabricación</h3>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                
+                <button type="submit">Enviar</button>
+                <button type="button" onclick="ocultarFormulario('fabricacion-form')">Cerrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="card-number">3</span>
+        <h3>Modernización</h3>
+        <p>Modernizamos los equipos con la última tecnología y diseño.</p>
+        <button class="card-button" onclick="mostrarFormulario('modernizacion-form')">Saber más</button>
+
+        <!-- Formulario oculto -->
+        <div id="modernizacion-form" class="form-container">
+            <h3>Formulario de Modernización</h3>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                
+                <button type="submit">Enviar</button>
+                <button type="button" onclick="ocultarFormulario('modernizacion-form')">Cerrar</button>
+            </form>
+        </div>
+    </div>
+</section>
+    <section class="video-section" id="video">
+      <div class="video-container">
+          <h2>Descubre Nuestro Proceso</h2>
+          <p>Vea nuestro equipo en acción y cómo creamos soluciones innovadoras.</p>
+          <div class="video-wrapper">
+              <video autoplay muted loop class="video-player">
+                  <!-- Asegúrate de que esta ruta sea la correcta -->
+                  <source src="./imagenes/Actualizaciones Equipo para Startup Vídeo 2D Ilustración Diseño en Azul Oscuro Verde.mp4" type="video/mp4">
+                  Tu navegador no soporta el elemento de video.
+              </video>
+          </div>
+      </div>
+  </section>
+  <footer class="pie-pagina">
+    <p>© 2024 Todos los derechos reservados - Ascensores Global Ltda.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
