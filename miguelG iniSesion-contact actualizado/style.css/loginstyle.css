@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: arial;
+    background-image: url(../imagenes/pexels-jplenio-1103970\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: transparent;
+}
+
+
+ main{
+  text-align: center;
+}
+
+
+img{
+    margin-top: 10px;
+    border-radius: 50%;
+    height: 170px;
+    width: 10px solid rgb(14, 13, 13);
+    margin-top: 100px;
+    margin-left: 5px;
+}
+
+  
+  .form-login {
+    width: 450px;
+    height: 450px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 18px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: rgb(247, 247, 247);
+  }
+ 
+  
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 45px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 25px;
+    height: 120px;
+  }
+  
+  .controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    
+  }
+  
+  .buttons {
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  .form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+    
+  }
+  
+  .form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .form-login a:hover {
+    text-decoration: underline;
+  
+  }
